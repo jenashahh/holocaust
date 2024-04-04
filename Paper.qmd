@@ -1,0 +1,57 @@
+---
+title: "Reflection on the Holocaust"
+subtitle: "Remembering with Data"
+author: "Jena Shah"
+thanks: "Code and data are available at: https://github.com/shahjena/holocaust"
+date: today
+date-type: long
+format: pdf
+editor: visual
+---
+
+# Introduction
+
+In this era of big data, our ability to measure and analyze complex societal events has been advanced like never before. We are able to track recent events like how things were during the COVID-19 Pandemic or instead we can document historical events or tragedies more effectively. However, as we go into this pool of numbers and stats, it is important for us to remember the real human experiences behind the data.
+
+In "[The Kitchen Counter Observatory](https://kieranhealy.org/blog/archives/2020/05/21/the-kitchen-counter-observatory/)", Kieran Healy (2020) discusses how he analyzed a lot of data during the COVID-19 pandemic to understand its impact on society, which reflects on the strange nature of his daily routine. He points out the tension between statistical data and the real human stories they represent. In a similar manner, Jamelle Bouie (2022) in "[We Still Can’t See American Slavery for What It Was](https://www.nytimes.com/2022/01/28/opinion/slavery-voyages-data-sets.html)" looks at how data can be used to understand historical tragedies. He makes sure to stress the need to see the humanity in the numbers.
+
+This paper will explore these two main ideas by using the Holocaust as an example. Through looking at the ethnic backgrounds and numbers of people killed at Auschwitz, we will discuss the challenges the come up when using data to understand human suffering and how we can honour the memory of those who died.
+
+# Data Source and Preparation
+
+For the interactive graph and table ([click here to check it out!](https://yifkn0-jena-shah.shinyapps.io/shiny/)), I used data from [a website](http://70.auschwitz.org/index.php?lang=en) owned by Memorial and Museum Auschwitz-Birkenau, which was created for the 70th anniversary of liberation from Auschwitz. The dataset included information on the nationality, number of deportees per nationality, percentage of deportees per nationality, number of people killed per nationality, percent of the people killed per nationality, and the percent of all victims per nationality. I focused only on the data of the number of people that were killed per nationality and did not include information of deportees in my analysis. The dataset was sorted by nationality which includes the categories for Jews, Poles, Roma (Gypsies), Soviet Prisoners of War (POW), and Other groups.
+
+Using this dataset, I created an interactive graph and table which allow users to explore the number of Holocaust victims killed at Auschwitz by their nationality/religion/demographic group. The users can specify the group which they are interested in seeing data for, giving them a more interactive and engaging way to understand the tragic events that occurred at Auschwitz.
+
+# Using Data to Understand History
+
+The Holocaust remains as one of the darkest times of human history in which millions of lives were lost through a systematic genocide. The Nazis were a group who targeted various other groups, including Jews, Romani people, disabled individuals, and people who they deemed as "undesirable". The Auschwitz concentration camp is one of the most infamous sites of the Holocaust. It had witnessed the deaths of over one million people (of which there were primarily Jews). Quantifying the number of victims and understanding their ethnic origins is a daunting task that requires both sensitivity and respect for the individuals whose lives were taken. The dataset obtained for this study provides valuable information and it is essential to approach it with a deep sense of sincerity. Of the thousands or even millions shown in the data and interactive graph/table represents a human being with a story, a family, and a life that was brutally cut short.
+
+# Interactive Graph and Table
+
+Shiny is an R package that lets users create interactive web applications directly from R and is used to integrate data analysis/visualization into web-based interfaces. The shiny package was used to create the interactive graph and table. This was done to help visualize the number of Holocaust victims killed at Auschwitz by nationality. As discussed before, these interactive tools will allow the users to specify groups they are interested in. This approach aims to provide a more personalized and engaging way to interact with the data, enhance the understanding of the scale of the tragedy, and humanize the victims by allowing users to explore the data through the various lenses.
+
+# Discussion
+
+Healy (2020) describes the experience of working with quantitative data as a way to exercie humility and remember the existence of the human stories behind the numbers. This sentiment resonates deeply when we are examining the Holocaust data. While numbers can quantify the scale of the tragedy, they can never fully capture the individual experiences, the suffering, and the loss that occurred. Additionally, Bouie (2022) reminds us that data of historical atrocities should not be used as a mere academic exercise but as a tool for practicing remembrance and a way to reflect. The analysis of the data on the Holocaust victims should be done with a sense of reverence and a commitment to preserving the memory of those who had been killed. By interacting with the data in a thoughtful and respectful manner, the victims are honoured and it ensures that their stories are never forgotten.
+
+# Conclusion
+
+Overall, the use of data to understand historical atrocities such as the Holocaust is a complex and challenging endeavor. It is essential to approach data with humility, respect, and a deep understanding of the human stories behind the numbers. As we reflect on the themes brought up by Healy and Bouie, we are reminded of the importance of using data responsibly and ethically, ensuring that it serves as a tool for remembrance, education, and honoring the memory of those who had suffered.
+
+# References
+[1] R Core Team. (2023). *R: A Language and Environment for Statistical Computing*. [Online]. Available: [https://www.R-project.org/](https://www.R-project.org/)
+
+[2] Winston Chang and others. (2023). *shiny: Web Application Framework for R*. [Online]. Available: [https://shiny.rstudio.com/](https://shiny.rstudio.com/)
+
+[3] Hadley Wickham and Jennifer Bryan. (2023). *readxl: Read Excel Files*. [Online]. Available: [https://readxl.tidyverse.org/](https://readxl.tidyverse.org/)
+
+[4] Hadley Wickham and Romain François and others. (2023). *dplyr: A Grammar of Data Manipulation*. [Online]. Available: [https://dplyr.tidyverse.org/](https://dplyr.tidyverse.org/)
+
+[5] Hadley Wickham. (2023). *ggplot2: Create Elegant Data Visualisations Using the Grammar of Graphics*. [Online]. Available: [https://ggplot2.tidyverse.org/](https://ggplot2.tidyverse.org/)
+
+[6] Auschwitz-Birkenau Memorial and Museum. (2015). *Memorial and Museum Auschwitz-Birkenau*. [Online]. Available: [http://70.auschwitz.org/index.php?lang=en](http://70.auschwitz.org/index.php?lang=en)
+
+[7] Healy, K. (2020). *The Kitchen Counter Observatory*. [Online]. Available: [https://kieranhealy.org/blog/archives/2020/05/21/the-kitchen-counter-observatory/](https://kieranhealy.org/blog/archives/2020/05/21/the-kitchen-counter-observatory/)
+
+[8] Bouie, J. (2022). *We Still Can’t See American Slavery for What It Was*. [Online]. Available: [https://www.nytimes.com/2022/01/28/opinion/slavery-voyages-data-sets.html](https://www.nytimes.com/2022/01/28/opinion/slavery-voyages-data-sets.html)
